@@ -1,0 +1,74 @@
+header {
+    position: fixed;
+    width: 100%;
+}
+header .headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
+}
+header .logo {
+    position: relative;
+    z-index: 999;
+}
+header .logo img {
+    width: 150px;
+}
+header nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgba(255,255,255,.7);
+    backdrop-filter: blur(10px);
+}
+header nav .gnb-menu {
+    padding-bottom: 12px;
+}
+header nav .gnb-menu h3 {
+    font-size: 16px;
+    color: #0062B0;
+    cursor: pointer;
+}
+header nav .gnb-in {display: none;}
+header nav .gnb-in li {
+    font-size: 14px;
+    color: #0062B0;
+    padding: 5px 0;
+}
+header nav .gnb-in li:first-child {padding-top: 12px;}
+header nav .mypage {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #0062B0;
+}
+header .hamburger {
+    position: relative;
+    z-index: 999;
+    color: #0062B0;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* 마우스오버 - 메뉴 색 변경 */
+header nav .gnb-menu h3:hover {color: #DD62A1;}
+/* 마우스오버 - 마이페이지 색 변경 */
+header nav .mypage:hover {background-color: #DD62A1;}
+/* 햄버거 메뉴 - 기본 상태에서 x 안 보이게 */
+header .hamburger .fa-xmark {display: none;}
+/* 햄버거 메뉴 - 클릭 상태에서 메뉴바 안 보이게, x 나타나게 */
+header .mobile_ham_on .fa-bars {display: none;}
+header .mobile_ham_on .fa-xmark {display: block;}
+/* 햄버거 메뉴 - 클릭 상태에서 메뉴창 나타나게*/
+header .mobile_menu_on {left: 0;}

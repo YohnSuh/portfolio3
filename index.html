@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스</title>
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/tablet.css" rel="stylesheet">
+    <link href="css/pc.css" rel="stylesheet">
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--header js-->
+    <script src="js/header.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="headerWrap">
+            <div class="logoWrap">
+                <h2 class="logo">
+                    <a href="#"><img src="images/baskin_logo.png"></a>
+                </h2><!--logo-->
+            </div><!--logoWrap-->
+            <nav>
+                <div class="gnb">
+                    <div class="gnb-menu">
+                        <h3>MENU</h3>
+                        <ul class="gnb-in">
+                            <li><a href="#">아이스크림</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">디저트</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">아이스크림 케이크</a></li>
+                        </ul><!--gnb-in-->
+                    </div><!--gnb-menu-->
+                    <div class="gnb-menu">
+                        <h3>ABOUT</h3>
+                        <ul class="gnb-in">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">점포개설문의</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul><!--gnb-in-->
+                    </div><!--gnb-menu-->
+                    <div class="gnb-menu">
+                        <h3>EVENT</h3>
+                        <ul class="gnb-in">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul><!--gnb-in-->
+                    </div><!--gnb-menu-->
+                    <div class="gnb-menu">
+                        <h3>STORE</h3>
+                        <ul class="gnb-in">
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul><!--gnb-in-->
+                    </div><!--gnb-menu-->
+                </div><!--gnb-->
+                <div class="mypage">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                </div><!--mypage-->
+            </nav>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div><!--hamburger-->
+        </div><!--headerWrap-->
+    </header>
+
+    <!--test-->
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="img"><img src="images/main1.jpg"></div>
+            <div class="txt">
+                <h2>내용내용</h2>
+            </div>
+            <div class="center">
+                <img src="images/main_menu4">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img"><img src="images/main2.jpg"></div>
+            <div class="txt">
+                <h2>내용내용</h2>
+            </div>
+            <div class="center">
+                <img src="images/main_menu2">
+            </div>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script>
+        let swiper = new Swiper('.swiper', {
+            loop : true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    </script>
+</body>
+</html>
