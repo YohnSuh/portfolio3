@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Pretendard;
+    src: url('../fonts/Pretendard-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Pretendard;
+    src: url('../fonts/Pretendard-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Pretendard;
+    src: url('../fonts/Pretendard-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: Pretendard;
+    src: url('../fonts/Pretendard-Black.ttf');
+    font-weight: 900;
+}
+:root {
+    --color-bg: #FF7C98;
+    --color-basic: #0062B0;
+    --color-high: #DD62A1;
+    --color-text: white;
+}
+body {font-family: Pretendard;}

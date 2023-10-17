@@ -1,6 +1,7 @@
 header {
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 header .headerWrap {
     display: flex;
@@ -32,13 +33,13 @@ header nav .gnb-menu {
 }
 header nav .gnb-menu h3 {
     font-size: 16px;
-    color: #0062B0;
+    color: var(--color-basic);
     cursor: pointer;
 }
 header nav .gnb-in {display: none;}
 header nav .gnb-in li {
     font-size: 14px;
-    color: #0062B0;
+    color: var(--color-basic);
     padding: 5px 0;
 }
 header nav .gnb-in li:first-child {padding-top: 12px;}
@@ -52,19 +53,19 @@ header nav .mypage {
     font-size: 14px;
     cursor: pointer;
     border-radius: 100%;
-    background-color: #0062B0;
+    background-color: var(--color-basic);
 }
 header .hamburger {
     position: relative;
     z-index: 999;
-    color: #0062B0;
+    color: var(--color-basic);
     font-size: 24px;
     cursor: pointer;
 }
 /* 마우스오버 - 메뉴 색 변경 */
-header nav .gnb-menu h3:hover {color: #DD62A1;}
+header nav .gnb-menu h3:hover {color: var(--color-high);}
 /* 마우스오버 - 마이페이지 색 변경 */
-header nav .mypage:hover {background-color: #DD62A1;}
+header nav .mypage:hover {background-color: var(--color-high);}
 /* 햄버거 메뉴 - 기본 상태에서 x 안 보이게 */
 header .hamburger .fa-xmark {display: none;}
 /* 햄버거 메뉴 - 클릭 상태에서 메뉴바 안 보이게, x 나타나게 */
@@ -72,3 +73,87 @@ header .mobile_ham_on .fa-bars {display: none;}
 header .mobile_ham_on .fa-xmark {display: block;}
 /* 햄버거 메뉴 - 클릭 상태에서 메뉴창 나타나게*/
 header .mobile_menu_on {left: 0;}
+
+/* section1 : 메인 슬라이드 */
+.mainContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+    overflow: hidden;
+}
+.mainContainer .mainSlide {
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    height: 100%;
+    z-index: 9;
+}
+.mainContainer .main-slide {position:relative;}
+/* 모바일에서 배경 이미지 안 보이게 */
+.mainContainer .mainSlide .main-bg {display: none;}
+.mainContainer .mainSlide .main-txt {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 96%;
+    height: 82.18%;
+    box-sizing: border-box;
+    color: var(--color-text);
+}
+.mainContainer .mainSlide .title-sub {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.mainContainer .mainSlide .title-main {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.mainContainer .mainSlide .main-txt-con {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.mainContainer .mainSlide .main-txt-tag a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.mainContainer .centerSlide {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.mainContainer .centerSlide .center-slide {
+    text-align: center;
+}
+.mainContainer .centerSlide .center-img {
+    width: 85.56%;
+    margin: 0 auto;
+}
+.mainContainer .centerSlide .center-img img {width: 100%;}
+
+/* section2 : 인기메뉴 */
+.menuContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+/* 슬라이드 시 다른 슬라이드 안 보이게 */
+.mainContainer .mainSlide .swiper-slide:not(.swiper-slide-visible),
+.mainContainer .centerSlide .swiper-slide:not(.swiper-slide-visible) {visibility: hidden;}
