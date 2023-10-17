@@ -32,23 +32,26 @@
     header .hamburger {display: none;}
 
     /* test */
-    .swiper {
+    .mainSlide {
         width: 100%;
         height: 100vh;
     }
-    .swiper .swiper-slide {
+    .mainSlide .swiper-slide {
         display: flex;
     }
-    .swiper .img {
+    .mainSlide .img {
         width: 50%;
     }
-    .swiper .img img {width: 100%;
+    .mainSlide .img img {width: 100%;
         height: 100%;
     object-fit: cover;}
-    .swiper .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%);
+    .mainSlide .main-txt {background-color: antiquewhite;}
+    .box-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
+    .box-container .swiper-slide:not(.swiper-slide-visible) {visibility: hidden;}
 }

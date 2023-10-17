@@ -17,8 +17,13 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!--swiper js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <!--header js-->
     <script src="js/header.js" defer></script>
+    <style>
+        
+    </style>
 </head>
 <body>
     <header>
@@ -77,52 +82,145 @@
         </div><!--headerWrap-->
     </header>
 
-    <!--test-->
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <div class="img"><img src="images/main1.jpg"></div>
-            <div class="txt">
-                <h2>내용내용</h2>
-            </div>
-            <div class="center">
-                <img src="images/main_menu4">
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="img"><img src="images/main2.jpg"></div>
-            <div class="txt">
-                <h2>내용내용</h2>
-            </div>
-            <div class="center">
-                <img src="images/main_menu2">
-            </div>
-        </div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-        </div>
+    <!--메인-->
+    <!--메인 슬라이드-->
+    <div class="swiper mainSlide">
+        <div class="swiper-wrapper mainWrapper">
+            <!--메인 슬라이드1-->
+            <div class="swiper-slide mainSlide">
+                <div class="main-bg">
+                    <img src="images/main1.jpg">
+                </div><!--main-bg-->
+                <div class="main-txt">
+                    <div class="main-txt-title">
+                        <span class="title-sub">CHOCOLATE&HAZELNUT COFFEE ICE CREAM</span>
+                        <h2 class="title-main">초코, 우리 이제 헤이즐넛</h2>
+                    </div><!--main-txt-title-->
+                    <div class="main-txt-con">
+                        <p>다크하고 싶은 초콜릿, 헤이즐넛 풍미가 가득한 커피 아이스크림에 헤이즐넛과 초콜릿칩이 쏙쏙!</p>
+                    </div><!--main-txt-con-->
+                    <div class="main-txt-tag">
+                        <a href="#">#초코우리이제헤이즐넛</a>
+                        <a href="#">#초코</a>
+                        <a href="#">#헤이즐넛</a>
+                        <a href="#">#초콜릿칩</a>
+                    </div>
+                </div><!--main-txt-->
+            </div><!--swiper-slide mainSlide-->
+            <!--메인 슬라이드2-->
+            <div class="swiper-slide mainSlide">
+                <div class="main-bg">
+                    <img src="images/main2.jpg">
+                </div><!--main-bg-->
+                <div class="main-txt">
+                    <div class="main-txt-title">
+                        <span class="title-sub">CHOCOLATE&HAZELNUT COFFEE CAKE</span>
+                        <h2 class="title-main">초코, 우리 이제 헤이즐넛 케이크</h2>
+                    </div><!--main-txt-title-->
+                    <div class="main-txt-con">
+                        <p>케이크로 탄생한 BR 콘테스트 1위 플레이버!</p>
+                    </div><!--main-txt-con-->
+                    <div class="main-txt-tag">
+                        <a href="#">#초코우리이제헤이즐넛</a>
+                        <a href="#">#쿠키앤크림</a>
+                        <a href="#">#아몬드봉봉</a>
+                        <a href="#">#엄마는외계인</a>
+                        <a href="#">#민트초콜릿칩</a>
+                    </div>
+                </div><!--main-txt-->
+            </div><!--swiper-slide mainSlide-->
+            <!--메인 슬라이드3-->
+            <div class="swiper-slide mainSlide">
+                <div class="main-bg">
+                    <img src="images/main3.jpg">
+                </div><!--main-bg-->
+                <div class="main-txt">
+                    <div class="main-txt-title">
+                        <span class="title-sub">ICE MOCHI HAZELNUT&COFFEE</span>
+                        <h2 class="title-main">아이스 모찌 헤이즐넛&커피</h2>
+                    </div><!--main-txt-title-->
+                    <div class="main-txt-con">
+                        <p>쫀득한 찹쌀떡 속에 헤이즐넛&커피 아이스크림과 초코 시럽이 어우러진 모찌</p>
+                    </div><!--main-txt-con-->
+                    <div class="main-txt-tag">
+                        <a href="#">#헤이즐넛&커피아이스모찌</a>
+                        <a href="#">#헤이즐넛</a>
+                        <a href="#">#아이스모찌</a>
+                    </div>
+                </div><!--main-txt-->
+            </div><!--swiper-slide mainSlide-->
+            <!--메인 슬라이드4-->
+            <div class="swiper-slide mainSlide">
+                <div class="main-bg">
+                    <img src="images/main4.jpg">
+                </div><!--main-bg-->
+                <div class="main-txt">
+                    <div class="main-txt-title">
+                        <span class="title-sub">CHOCOLATE&HAZELNUT COFFEE BLAST</span>
+                        <h2 class="title-main">초코, 우리 이제 헤이즐넛 블라스트</h2>
+                    </div><!--main-txt-title-->
+                    <div class="main-txt-con">
+                        <p>초코, 우리 이제 헤이즐넛 IC와 잘 어울리는 초코소스, 고소한 넛트 토핑이 완벽한 조화를 이루는 그래이맛 블라스트!</p>
+                    </div><!--main-txt-con-->
+                    <div class="main-txt-tag">
+                        <a href="#">#초코우리이제헤이즐넛블라스트</a>
+                        <a href="#">#초코</a>
+                        <a href="#">#헤이즐넛</a>
+                        <a href="#">#넛트</a>
+                    </div>
+                </div><!--main-txt-->
+            </div><!--swiper-slide mainSlide-->
+        </div><!--swiper-wrapper mainWrapper-->
+
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
     
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!--main btn-->
+        <div class="swiper-button-prev mainBtnPrev"></div>
+        <div class="swiper-button-next mainBtnNext"></div>
+    </div><!--swiper mainSlide-->
+
+
+    <div class="swiper box-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="center"><img src="images/main_menu1.png"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="center"><img src="images/main_menu2.png"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="center"><img src="images/main_menu3.png"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="center"><img src="images/main_menu4.png"></div>
+            </div>
+        </div>
     </div>
 
     <script>
-        let swiper = new Swiper('.swiper', {
+        let box = new Swiper('.box-container', {
+            effect : 'fade'
+        });
+
+        let swiper = new Swiper('.mainSlide', {
+            parallax:true,
+            effect : 'fade',
             loop : true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev"
-            }
+            },
+            thumbs: {swiper : box},
+            // on: {
+            //     slideChange: function () {
+            //         $('.center').removeClass('active');
+            //         $('.center').eq(this.realIndex).addClass('active');
+            //     }
+            // }
         });
+
+        
     </script>
 </body>
 </html>
