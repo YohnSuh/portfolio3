@@ -101,7 +101,7 @@
     }
     .mainContainer .mainBtnNext,
     .mainContainer .mainBtnPrev {
-        top:0;
+        display: block;
         color: var(--color-text);
         width: 60px;
         height: 100%;
