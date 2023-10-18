@@ -91,7 +91,7 @@
     }
     .mainContainer .centerSlide {
         z-index: 99;
-        bottom: 15%;
+        bottom: 20%;
         left: 50%;
         transform: translateX(-50%);
         width: 30%;
@@ -99,8 +99,22 @@
     .mainContainer .center-img {
         animation: shake 1s infinite linear alternate;
     }
+    .mainContainer .mainBtnNext,
+    .mainContainer .mainBtnPrev {
+        top:0;
+        color: var(--color-text);
+        width: 60px;
+        height: 100%;
+        opacity: 0;
+    }
+    .mainContainer .mainBtnNext {padding-right: 30px;}
+    .mainContainer .mainBtnPrev {padding-left: 30px;}
+    .mainContainer .mainBtnNext:hover,
+    .mainContainer .mainBtnPrev:hover {opacity: .35;}
+    /* 센터 이미지 흔들리게 */
     @keyframes shake {
         0% {transform: rotate(-2.5deg);}
         100% {transform: rotate(2.5deg);}
     }
+
 }
