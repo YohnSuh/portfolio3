@@ -151,3 +151,18 @@ header .mobile_menu_on {left: 0;}
     width: 100%;
     height: 100vh;
 }
+
+/* section3 : 카테고리 */
+.categoryContainer {
+    width: 100%;
+    height: 100vh;
+}
+.categoryContainer .categoryWrapper {
+    width: 96%;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.categoryContainer .category-beverage {
+    width: 44.44%;
+    background-color: beige;
+}
