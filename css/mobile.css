@@ -154,15 +154,77 @@ header .mobile_menu_on {left: 0;}
 
 /* section3 : 카테고리 */
 .categoryContainer {
+    /* display: flex;
+    align-items: center; */
     width: 100%;
-    height: 100vh;
 }
 .categoryContainer .categoryWrapper {
     width: 96%;
     margin: 0 auto;
     background-color: aqua;
 }
-.categoryContainer .category-beverage {
-    width: 44.44%;
-    background-color: beige;
+.categoryContainer .category-ice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 44vw;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: url('../images/menu_ice.jpg') no-repeat center / cover;
+}
+.categoryContainer .category-ice::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+.categoryContainer .categoryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.categoryContainer .categoryRow > div {
+    position: relative;
+    width: calc(50% - 4px);
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.categoryContainer .categoryRow > div::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.categoryContainer .categoryRow > div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.categoryContainer .category-inner {
+    position: absolute;
+    text-align: center;
+    color: var(--color-text);
+}
+.categoryContainer .category-inner h2 {
+    font-weight: 900;
+    font-size: 14px;
+}
+.categoryContainer .category-inner p {font-size: 12px;}
+.categoryContainer .category-beverage {background-image: url('../images/menu_beverage.jpg');}
+.categoryContainer .category-coffee {background-image: url('../images/menu_coffee.jpg');}
+.categoryContainer .category-dessert {background-image: url('../images/menu_dessert.jpg');}
+.categoryContainer .category-cake {background-image: url('../images/menu_cake.jpg');}
+.categoryContainer .categoryRow > div::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
 }
