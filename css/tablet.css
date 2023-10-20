@@ -167,4 +167,37 @@
     }
     .infoContainer .info-txt h2 {font-size: 36px;}
     .infoContainer .info-txt p {font-size: 18px;}
+
+    /* sns */
+    .snsContainer .sns-txt h2 {font-size: 24px;}
+    .snsContainer .sns-txt p {
+        font-size: 16px;
+        margin: 15px 0 30px;
+    }
+    .snsContainer .sns {padding-bottom: 40px;}
+    .snsContainer .sns li {margin: 0 10px;}
+    .snsContainer .sns a {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    /* footer */
+    footer .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    footer .map li {
+        padding-bottom: 0;
+        margin: 0 10px;
+    }
+    footer .address {
+        font-size: 14px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    footer .address li {padding-bottom: 10px;}
+    footer .copyright {font-size: 12px;}
 }

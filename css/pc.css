@@ -8,4 +8,23 @@
     /* 정보 */
     .infoContainer .info-txt h2 {font-size: 48px;}
     .infoContainer .info-txt p {font-size: 20px;}
+
+    /* sns */
+    .snsContainer .sns-txt h2 {font-size: 34px;}
+    .snsContainer .sns-txt p {
+        font-size: 24px;
+        margin: 20px 0 50px;
+    }
+    .snsContainer .sns {padding-bottom: 50px;}
+    .snsContainer .sns li {margin: 0 15px;}
+    .snsContainer .sns a {
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+
+    /* footer */
+    footer .map {font-size: 16px;}
+    footer .address {font-size: 16px;}
+    footer .copyright {font-size: 14px;}
 }
