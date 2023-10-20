@@ -155,4 +155,16 @@
     .categoryContainer .category-ice:hover:before,
     .categoryContainer .categoryRow > div:hover:before {background-color: rgba(0,0,0,.5);}
 
+    /* 정보 */
+    .infoContainer {
+        margin-top: 0;
+        display: flex;
+    }
+    .infoContainer .info-item {height: 100%;}
+    .infoContainer .info-txt {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .infoContainer .info-txt h2 {font-size: 36px;}
+    .infoContainer .info-txt p {font-size: 18px;}
 }

@@ -4,4 +4,8 @@
     /* 카테고리 */
     .categoryContainer .category-inner h2 {font-size: 36px;}
     .categoryContainer .category-inner p {font-size: 20px;}
+
+    /* 정보 */
+    .infoContainer .info-txt h2 {font-size: 48px;}
+    .infoContainer .info-txt p {font-size: 20px;}
 }
