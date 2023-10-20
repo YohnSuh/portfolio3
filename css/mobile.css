@@ -153,15 +153,9 @@ header .mobile_menu_on {left: 0;}
 }
 
 /* section3 : 카테고리 */
-.categoryContainer {
-    /* display: flex;
-    align-items: center; */
-    width: 100%;
-}
 .categoryContainer .categoryWrapper {
     width: 96%;
     margin: 0 auto;
-    background-color: aqua;
 }
 .categoryContainer .category-ice {
     display: flex;
@@ -169,7 +163,7 @@ header .mobile_menu_on {left: 0;}
     align-items: center;
     position: relative;
     width: 100%;
-    height: 44vw;
+    height: 45vw;
     margin-bottom: 8px;
     border-radius: 20px;
     overflow: hidden;
@@ -180,6 +174,7 @@ header .mobile_menu_on {left: 0;}
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.3);
+    transition: .25s;
 }
 .categoryContainer .categoryRow {
     display: flex;
@@ -211,6 +206,7 @@ header .mobile_menu_on {left: 0;}
     position: absolute;
     text-align: center;
     color: var(--color-text);
+    transition: .3s;
 }
 .categoryContainer .category-inner h2 {
     font-weight: 900;
