@@ -309,7 +309,23 @@ header .mobile_menu_on {left: 0;}
     color: var(--color-bg);
 }
 .snsContainer .sns a:hover {color: var(--color-high);}
-
+/* sns swiper */
+.snsContainer .snsSlide {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+}
+.snsContainer .snsSlide::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+.snsContainer .snsSlide img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
 /* footer */
 footer {
     border-top: 1px solid var(--color-text);

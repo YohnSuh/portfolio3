@@ -2,6 +2,13 @@
     header nav .gnb-menu {padding: 0 32px}
 
     /* 카테고리 */
+    .categoryContainer .category-ice {
+        width: calc(100% - 24px);
+    }
+    .categoryContainer .categoryRow > div {
+        width: calc(50% - 12px);
+        height: calc(100% - 12px);
+    }
     .categoryContainer .category-inner h2 {font-size: 36px;}
     .categoryContainer .category-inner p {font-size: 20px;}
 

@@ -136,13 +136,13 @@
     }
     .categoryContainer .category-item {height: 100%;}
     .categoryContainer .category-ice {
-        width: calc(100% - 24px);
+        width: calc(100% - 12px);
         height: 100%;
     }
     .categoryContainer .categoryRow {width: 100%; height: 50%;}
     .categoryContainer .categoryRow > div {
-        width: calc(50% - 12px);
-        height: calc(100% - 12px);
+        width: calc(50% - 6px);
+        height: calc(100% - 6px);
     }
     .categoryContainer .categoryRow > div::after {display: none;}
     .categoryContainer .category-inner h2 {

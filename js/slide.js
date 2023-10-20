@@ -15,3 +15,22 @@ let swiper = new Swiper('.mainSlide', {
     },
     thumbs: {swiper : center},
 });
+
+let sns = new Swiper('.snsSwiper', {
+    slidesPerView : 4,
+    slidesPerGroup: 1,
+    loop: true,
+    autoplay: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 6,
+            slidesPerGroup: 1,
+            loop: true
+        },
+        768: {
+            slidesPerView: 5,
+            slidesPerGroup: 1,
+            loop: true
+        }
+    }
+});
