@@ -16,6 +16,29 @@ let swiper = new Swiper('.mainSlide', {
     thumbs: {swiper : center},
 });
 
+/* section2 : menu 슬라이드 너비에 따라 swiper 적용/미적용 */
+let ww = $(window).width();
+let menuSwiper = undefined;
+
+function initSwiper() {
+    if(ww <= 768 && menuSwiper == undefined) {
+        menuSwiper = new Swiper('.menuSwiper', {
+            loop : true
+        });
+    } else if(ww > 768 && menuSwiper != undefined) {
+        menuSwiper.destroy();
+        menuSwiper = undefined;
+    }
+};
+
+initSwiper();
+
+$(window).on('resize', function() {
+    ww = $(window).width();
+    initSwiper();
+});
+
+/* section3 : sns 슬라이드 */
 let sns = new Swiper('.snsSwiper', {
     slidesPerView : 4,
     slidesPerGroup: 1,

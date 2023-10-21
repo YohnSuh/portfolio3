@@ -30,28 +30,6 @@
         background-color: rgba(255, 255, 255, .7);
     }
     header .hamburger {display: none;}
-
-    /* test */
-    /* .mainSlide {
-        width: 100%;
-        height: 100vh;
-    }
-    .mainSlide .swiper-slide {
-        display: flex;
-    }
-    .mainSlide .img {
-        width: 50%;
-    }
-    .mainSlide .img img {width: 100%;
-        height: 100%;
-    object-fit: cover;}
-    .centerSlide {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    } */
     
     /* section1 : 메인 슬라이드 */
     .mainContainer {background-color: transparent;}
@@ -116,6 +94,9 @@
         0% {transform: rotate(-2.5deg);}
         100% {transform: rotate(2.5deg);}
     }
+
+    /* section2 인기메뉴 */
+    
 
     /* 카테고리 */
     .categoryContainer {height: 100vh;}
