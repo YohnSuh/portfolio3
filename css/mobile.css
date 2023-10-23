@@ -153,17 +153,33 @@ header .mobile_menu_on {left: 0;}
     overflow: hidden;
 }
 .menuContainer .menuWrapper {
+    width: 96%;
     height: 100%;
+    margin: 0 auto;
 }
 .menuContainer .menuSwiper {
-    height: 100%;
+    height: 80%;
+}
+.menuContainer .menuTitle {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.menuContainer .menuTitle span {
+    font-size: 14px;
+    letter-spacing: 3px;
 }
 .menuContainer .menu-slide {
-    height: 100%;   
+    height: 100%;
 }
 .menuContainer .menu-item {
     position: relative;
     height: 100%;
+    margin-top: 30%;
 }
 .menuContainer .menu-img {
     position: absolute;
@@ -179,20 +195,26 @@ header .mobile_menu_on {left: 0;}
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 55%;
     margin-top: 35%;
     padding-top: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
     box-sizing: border-box;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
 }
 .menuContainer .menu-text > div {text-align: center;}
-.menuContainer .menu-text .hashtag li {display: inline-block;}
-.menuContainer .menu-text .hashtag li a {
-    display: block;
-    border: 1px solid var(--color-text);
-    border-radius: 50px;
-    padding: 8px 12px;
+.menuContainer .menu-text > div span {
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 10px;
 }
+.menuContainer .menu-text > div h2 {
+    font-weight: 900;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.menuContainer .menu-text > div p {font-size: 14px;}
 /* top메뉴 텍스트 배경 색상 */
 .menuContainer .top1 {background-color: #DEB684;}
 .menuContainer .top2 {background-color: #DFE7DD;}
@@ -205,9 +227,21 @@ header .mobile_menu_on {left: 0;}
 .menuContainer .top9 {background-color: #F7D9E0;}
 .menuContainer .top10 {background-color: #DCC8DE;}
 
+/* idx slide */
+.menuContainer .idxSlide {
+    width: 100%;
+}
+.menuContainer .idx-img {
+    width: 100%;
+    cursor: pointer;
+}
+.menuContainer .idx-img img {width: 100%;transition: .25s;}
+.menuContainer .swiper-slide:not(.swiper-slide-thumb-active) .idx-img img {transform: scale(.7);}
+
 /* section3 : 카테고리 */
 .categoryContainer .categoryWrapper {
     width: 96%;
+    height: 20%;
     margin: 0 auto;
 }
 .categoryContainer .category-ice {
@@ -333,6 +367,7 @@ header .mobile_menu_on {left: 0;}
 .snsContainer {
     background-color: var(--color-bg);
     padding-top: 80px;
+    padding-bottom: 30px;
 }
 .snsContainer .sns-txt {text-align: center;}
 .snsContainer .sns-txt h2 {
@@ -363,6 +398,7 @@ header .mobile_menu_on {left: 0;}
 }
 .snsContainer .sns a:hover {color: var(--color-high);}
 /* sns swiper */
+.snsContainer .swiper-wrapper {transition-timing-function: linear;}
 .snsContainer .snsSlide {
     position: relative;
     width: 25%;

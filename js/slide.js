@@ -19,15 +19,23 @@ let swiper = new Swiper('.mainSlide', {
 /* section2 : menu 슬라이드 너비에 따라 swiper 적용/미적용 */
 let ww = $(window).width();
 let menuSwiper = undefined;
+let idxSwiper = undefined;
 
 function initSwiper() {
     if(ww <= 768 && menuSwiper == undefined) {
+        idxSwiper = new Swiper('.idxSlide', {
+            loop : true,
+            slidesPerView : 5
+        });
         menuSwiper = new Swiper('.menuSwiper', {
-            loop : true
+            loop : true,
+            thumbs : {swiper : idxSwiper}
         });
     } else if(ww > 768 && menuSwiper != undefined) {
         menuSwiper.destroy();
+        idxSwiper.destroy();
         menuSwiper = undefined;
+        idxSwiper = undefined;
     }
 };
 
@@ -41,19 +49,19 @@ $(window).on('resize', function() {
 /* section3 : sns 슬라이드 */
 let sns = new Swiper('.snsSwiper', {
     slidesPerView : 4,
-    slidesPerGroup: 1,
     loop: true,
-    autoplay: true,
+    loopAdditionalSlides : 1,
+    speed : 3500,
+    autoplay: {
+        delay : 0,
+        disableOnInteraction : false
+    },
     breakpoints: {
         1024: {
-            slidesPerView: 6,
-            slidesPerGroup: 1,
-            loop: true
+            slidesPerView: 6
         },
         768: {
-            slidesPerView: 5,
-            slidesPerGroup: 1,
-            loop: true
+            slidesPerView: 5
         }
     }
 });

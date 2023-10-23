@@ -96,9 +96,57 @@
     }
 
     /* section2 인기메뉴 */
+    .menuContainer .menuSwiper {height: 100%;}
+    .menuContainer .menu-wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* justify-content: center; */
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .menuContainer .menu-slide {
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+    }
+    .menuContainer .menu-slide::after {
+        content:'';
+        display: block;
+        padding-bottom: 100%;
+    }
     
+    .menuContainer .menu-item {margin-top: 0;}
+    .menuContainer .menu-text {
+        position: absolute;
+        /* top: 40%; */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        /* height: 100%; */
+        margin-top: 0;
+        padding: 0;
+        box-sizing: unset;
+        border-radius: 100%;
+    }
+    .menuContainer .menu-text::after {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+    .menuContainer .menu-text > div  {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+    .menuContainer .idxSlide {display: none;}
 
-    /* 카테고리 */
+    /* section3 카테고리 */
     .categoryContainer {height: 100vh;}
     .categoryContainer .categoryWrapper {
         display: flex;
@@ -136,7 +184,7 @@
     .categoryContainer .category-ice:hover:before,
     .categoryContainer .categoryRow > div:hover:before {background-color: rgba(0,0,0,.5);}
 
-    /* 정보 */
+    /* section4 : 정보 */
     .infoContainer {
         margin-top: 0;
         display: flex;
@@ -149,7 +197,7 @@
     .infoContainer .info-txt h2 {font-size: 36px;}
     .infoContainer .info-txt p {font-size: 18px;}
 
-    /* sns */
+    /* section5 : sns */
     .snsContainer .sns-txt h2 {font-size: 24px;}
     .snsContainer .sns-txt p {
         font-size: 16px;
