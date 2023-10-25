@@ -102,35 +102,46 @@
         top: 50%;
         transform: translateY(-50%);
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        /* justify-content: center; */
+        grid-template-columns: repeat(4, 1fr);
         width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
+        height: auto;
     }
     .menuContainer .menu-slide {
         width: 100%;
         height: 100%;
-        border: 1px solid;
     }
     .menuContainer .menu-slide::after {
         content:'';
         display: block;
         padding-bottom: 100%;
     }
-    
-    .menuContainer .menu-item {margin-top: 0;}
+    .menuContainer .menu-item {
+        margin-top: 0;
+        transition: .35s;
+    }
+    .menuContainer .menu-img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuContainer .menu-img img {
+        transform: scale(.8);
+        transition: .35s;
+    }
     .menuContainer .menu-text {
         position: absolute;
-        /* top: 40%; */
-        left: 50%;
-        transform: translateX(-50%);
+        top: 30%;
+        transform: scale(0);
         width: 100%;
-        /* height: 100%; */
-        margin-top: 0;
+        height: 100%;
         padding: 0;
         box-sizing: unset;
         border-radius: 100%;
+        transition: .5s;
+        transform-origin: center top;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.1);
     }
     .menuContainer .menu-text::after {
         content: '';
@@ -144,7 +155,15 @@
         transform: translate(-50%, -50%);
         width: 80%;
     }
+    .menuContainer .menu-text > div span {font-size: 10px;}
+    .menuContainer .menu-text > div h2 {font-size: 14px;}
+    .menuContainer .menu-text > div p {font-size: 12px;}
     .menuContainer .idxSlide {display: none;}
+    /* 마우스 올렸을 때 */
+    .menuContainer .menu-slide:hover {z-index: 9999;}
+    .menuContainer .menu-slide:hover .menu-item {transform: translateY(-30%);}
+    .menuContainer .menu-slide:hover .menu-img img {transform: scale(1);}
+    .menuContainer .menu-slide:hover .menu-text {transform: scale(.9);}
 
     /* section3 카테고리 */
     .categoryContainer {height: 100vh;}
@@ -210,7 +229,37 @@
         height: 50px;
         font-size: 25px;
     }
-
+    /* 각 페이지 이름 */
+    .pagerName {
+        position: fixed;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        z-index: 9999;
+    }
+    .pagerName .pager li {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        cursor: pointer;
+        letter-spacing: 2px;
+    }
+    .pagerName .pager li span {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        margin-right: 20px;
+        border: 1px solid;
+    }
+    .pagerName .pager li.on:nth-child(1) {color: var(--color-text);}
+    .pagerName .pager li.on:nth-child(1) span {background-color: var(--color-text);}
+    .pagerName .pager li.on:nth-child(4) {color: var(--color-text);}
+    .pagerName .pager li.on:nth-child(4) span {background-color: var(--color-text);}
+    .pagerName .pager li.on:nth-child(2) span,
+    .pagerName .pager li.on:nth-child(3) span
+     {background-color: black;}
+    .pagerName .pager li:not(.on) {color:rgba(0,0,0,.3);}
     /* footer */
     footer .map {
         display: flex;

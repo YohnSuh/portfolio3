@@ -1,5 +1,20 @@
 @media all and (min-width: 1024px) {
     header nav .gnb-menu {padding: 0 32px}
+    /* main */
+    .mainContainer .mainSlide .main-txt-title .title-sub {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .mainContainer .mainSlide .main-txt-title .title-main {
+        font-size: 64px;
+        margin-bottom: 30px;
+    }
+    .mainContainer .mainSlide .main-txt-con {font-size: 24px;}
+    .mainContainer .mainSlide .main-txt-tag a {font-size: 20px;}
+    /* top10 */
+    .menuContainer .menu-wrapper {grid-template-columns: repeat(5, 1fr);}
+    .menuContainer .menu-text > div h2 {font-size: 16px;}
+    .menuContainer .menu-text > div p {font-size: 14px;}
 
     /* 카테고리 */
     .categoryContainer .category-ice {
@@ -34,4 +49,10 @@
     footer .map {font-size: 16px;}
     footer .address {font-size: 16px;}
     footer .copyright {font-size: 14px;}
+}
+@media all and (min-width: 1440px) {
+    /* top10 */
+    .menuContainer .menu-text > div span {font-size: 12px;}
+    .menuContainer .menu-text > div h2 {font-size: 22px;}
+    .menuContainer .menu-text > div p {font-size: 18px;}
 }

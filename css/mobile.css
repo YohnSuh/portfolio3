@@ -47,7 +47,7 @@ header nav .mypage {
     display: inline-block;
     width: 30px;
     height: 30px;
-    color: white;
+    color: var(--color-text);
     line-height: 30px;
     text-align: center;
     font-size: 14px;
@@ -62,6 +62,8 @@ header .hamburger {
     font-size: 24px;
     cursor: pointer;
 }
+/* 메뉴 클릭 시 타이틀 색 바뀌게 */
+header nav .gnb-menu h3.active {color:var(--color-high);}
 /* 마우스오버 - 메뉴 색 변경 */
 header nav .gnb-menu h3:hover {color: var(--color-high);}
 /* 마우스오버 - 마이페이지 색 변경 */
@@ -150,7 +152,6 @@ header .mobile_menu_on {left: 0;}
 .menuContainer {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 .menuContainer .menuWrapper {
     width: 96%;
@@ -415,6 +416,8 @@ header .mobile_menu_on {left: 0;}
     left: 0;
     width: 100%;
 }
+/* 페이저 */
+.pagerName {display: none;}
 /* footer */
 footer {
     border-top: 1px solid var(--color-text);
