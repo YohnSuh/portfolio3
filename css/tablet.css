@@ -10,7 +10,7 @@
         position: absolute;
         top:0;
         left: 0;
-        width: 60%;
+        width: 50%;
         height: 100%;
         transform-origin: right;
         background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../images/menu_bg.jpg') no-repeat center / cover;
@@ -18,8 +18,8 @@
     header nav .gnb {
         position: absolute;
         top: 0;
-        left: 60%;
-        width: 40%;
+        left: 50%;
+        width: 50%;
         height: 100%;
         padding-top: 150px;
         box-sizing: border-box;
@@ -37,8 +37,8 @@
     header nav .util {
         position: absolute;
         top: 90px;
-        left: 60%;
-        width: 40%;
+        left: 50%;
+        width: 50%;
         margin: 0;
         padding: 0 40px;
         box-sizing: border-box;
