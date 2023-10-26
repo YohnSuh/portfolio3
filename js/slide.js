@@ -2,7 +2,8 @@ let center = new Swiper('.centerSlide', {
     effect : 'fade',
     touchRatio : 0,
     parallax : true,
-    loop : true
+    loop : true,
+    autoplay : true
 });
 
 let swiper = new Swiper('.mainSlide', {
@@ -14,6 +15,11 @@ let swiper = new Swiper('.mainSlide', {
         prevEl: ".swiper-button-prev"
     },
     thumbs: {swiper : center},
+    autoplay : true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
 });
 
 /* section2 : menu 슬라이드 너비에 따라 swiper 적용/미적용 */

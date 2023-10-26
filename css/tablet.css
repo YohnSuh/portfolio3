@@ -60,13 +60,31 @@
         object-fit: cover;
     }
     .mainContainer .mainSlide .main-txt {
+        bottom: unset;
         top: 25%;
         left: 50%;
         width: 50%;
         padding: 0 8%;
         height: unset;
-        z-index: 999;
     }
+    .mainContainer .mainSlide .title-sub {font-size: 16px;}
+    .mainContainer .mainSlide .title-main {font-size: 36px;}
+    .mainContainer .mainSlide .main-txt-con {font-size: 20px;}
+    .mainContainer .mainSlide .main-txt-tag {margin-top: 100px;}
+    .mainContainer .mainSlide .main-txt-tag a {font-size: 16px;}
+    /* pager */
+    .mainContainer .mainSlide .mainPager {
+        position: absolute;
+        left: 25%;
+        margin-bottom: 50px;
+    }
+    .mainContainer .mainSlide .mainPager span {
+        width: 25px;
+        height: 3px;
+        border-radius: unset;
+        margin: 0px;
+    }
+    /* centerslide*/
     .mainContainer .centerSlide {
         z-index: 99;
         bottom: 20%;
@@ -82,13 +100,12 @@
         display: block;
         color: var(--color-text);
         width: 60px;
-        height: 100%;
-        opacity: 0;
+        opacity: .5;
     }
     .mainContainer .mainBtnNext {padding-right: 30px;}
     .mainContainer .mainBtnPrev {padding-left: 30px;}
     .mainContainer .mainBtnNext:hover,
-    .mainContainer .mainBtnPrev:hover {opacity: .35;}
+    .mainContainer .mainBtnPrev:hover {color: var(--color-high);}
     /* 센터 이미지 흔들리게 */
     @keyframes shake {
         0% {transform: rotate(-2.5deg);}
@@ -231,6 +248,7 @@
     }
     /* 각 페이지 이름 */
     .pagerName {
+        display: block;
         position: fixed;
         top: 50%;
         left: 50px;

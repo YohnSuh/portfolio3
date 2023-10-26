@@ -6,10 +6,11 @@
         margin-bottom: 20px;
     }
     .mainContainer .mainSlide .main-txt-title .title-main {
-        font-size: 64px;
+        font-size: 54px;
         margin-bottom: 30px;
     }
     .mainContainer .mainSlide .main-txt-con {font-size: 24px;}
+    .mainContainer .mainSlide .main-txt-tag {margin-top: 150px;}
     .mainContainer .mainSlide .main-txt-tag a {font-size: 20px;}
     /* top10 */
     .menuContainer .menu-wrapper {grid-template-columns: repeat(5, 1fr);}

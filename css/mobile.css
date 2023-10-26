@@ -129,6 +129,8 @@ header .mobile_menu_on {left: 0;}
     margin-right: 5px;
     margin-top: 5px;
 }
+/* pager */
+.mainContainer .mainSlide .mainPager .swiper-pagination-bullet-active {background-color: var(--color-text);opacity: .5;}
 .mainContainer .centerSlide {
     position: absolute;
     bottom: 0;
@@ -152,6 +154,7 @@ header .mobile_menu_on {left: 0;}
 .menuContainer {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .menuContainer .menuWrapper {
     width: 96%;
@@ -370,7 +373,7 @@ header .mobile_menu_on {left: 0;}
     padding-top: 80px;
     padding-bottom: 30px;
 }
-.snsContainer .sns-txt {text-align: center;}
+.snsContainer .sns-txt {text-align: center;color: var(--color-basic);}
 .snsContainer .sns-txt h2 {
     font-size: 16px;
     letter-spacing: 5px;
@@ -416,7 +419,7 @@ header .mobile_menu_on {left: 0;}
     left: 0;
     width: 100%;
 }
-/* 페이저 */
+/* 화면 페이저 */
 .pagerName {display: none;}
 /* footer */
 footer {
