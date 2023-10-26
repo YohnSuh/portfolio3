@@ -1,7 +1,8 @@
 header {
     position: fixed;
+    top: 20px;
     width: 100%;
-    z-index: 999;
+    z-index: 99999;
 }
 header .headerWrap {
     display: flex;
@@ -24,36 +25,56 @@ header nav {
     width: 100%;
     height: 100vh;
     padding-top: 50px;
-    text-align: center;
     background-color: rgba(255,255,255,.7);
     backdrop-filter: blur(10px);
+    transition: .3s;
+}
+header nav .gnb {
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 40px;
+    box-sizing: border-box;
 }
 header nav .gnb-menu {
-    padding-bottom: 12px;
+    padding-bottom: 40px;
 }
 header nav .gnb-menu h3 {
-    font-size: 16px;
+    display: flex;
+    font-size: 24px;
     color: var(--color-basic);
     cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+header nav .gnb-menu span {
+    font-size: 14px;
+    margin-right: 25px;
+    letter-spacing: 0;
 }
 header nav .gnb-in {display: none;}
 header nav .gnb-in li {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 700;
     color: var(--color-basic);
     padding: 5px 0;
+    margin-left: 45px;
+    letter-spacing: 5px;
 }
 header nav .gnb-in li:first-child {padding-top: 12px;}
-header nav .mypage {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    color: var(--color-text);
-    line-height: 30px;
+header nav .util {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 40px 0;
+    border-top: 1px solid var(--color-basic);
+    padding-top: 15px;
+}
+header nav .util a {
+    color: var(--color-basic);
     text-align: center;
     font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     cursor: pointer;
-    border-radius: 100%;
-    background-color: var(--color-basic);
 }
 header .hamburger {
     position: relative;
@@ -66,15 +87,17 @@ header .hamburger {
 header nav .gnb-menu h3.active {color:var(--color-high);}
 /* 마우스오버 - 메뉴 색 변경 */
 header nav .gnb-menu h3:hover {color: var(--color-high);}
+/* 마우스오버 - 메뉴 안 색 변경 */
+header nav .gnb-in li:hover {color: var(--color-high);}
 /* 마우스오버 - 마이페이지 색 변경 */
-header nav .mypage:hover {background-color: var(--color-high);}
+header nav .util a:hover {color: var(--color-high);}
 /* 햄버거 메뉴 - 기본 상태에서 x 안 보이게 */
 header .hamburger .fa-xmark {display: none;}
 /* 햄버거 메뉴 - 클릭 상태에서 메뉴바 안 보이게, x 나타나게 */
-header .mobile_ham_on .fa-bars {display: none;}
-header .mobile_ham_on .fa-xmark {display: block;}
+header .hamburger_on .fa-bars {display: none;}
+header .hamburger_on .fa-xmark {display: block;}
 /* 햄버거 메뉴 - 클릭 상태에서 메뉴창 나타나게*/
-header .mobile_menu_on {left: 0;}
+header .menu_on {left: 0;}
 
 /* section1 : 메인 슬라이드 */
 .mainContainer {

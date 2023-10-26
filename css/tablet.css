@@ -1,36 +1,56 @@
 @media all and (min-width: 768px) {
-    header .logoWrap {width: 50%;}
+    header .logo img {width: 200px;}
     header nav {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        top: unset;
-        left: unset;
-        width: 50%;
-        height: auto;
-        background-color: unset;
-        backdrop-filter: unset;
-        padding-top: 0;
+        opacity: 0;
+        background-color: transparent;
+        transition: .3s;
+    }
+    header nav::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        transform-origin: right;
+        background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../images/menu_bg.jpg') no-repeat center / cover;
     }
     header nav .gnb {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    header nav .gnb-menu {
-        position: relative;
-        padding-bottom: 0;
-        padding: 0 16px;
-    }
-
-    header nav .gnb-in {
         position: absolute;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, .7);
+        top: 0;
+        left: 60%;
+        width: 40%;
+        height: 100%;
+        padding-top: 150px;
+        box-sizing: border-box;
+        background-color: var(--color-basic);
     }
-    header .hamburger {display: none;}
-    
+    header nav .gnb-menu h3 {
+        font-size: 32px;
+        color: var(--color-text);
+    }
+    header nav .gnb-menu span {font-size: 18px;}
+    header nav .gnb-in li {
+        font-size: 20px;
+        color: var(--color-text);
+    }
+    header nav .util {
+        position: absolute;
+        top: 90px;
+        left: 60%;
+        width: 40%;
+        margin: 0;
+        padding: 0 40px;
+        box-sizing: border-box;
+        border-top: 0;
+    }
+    header nav .util a {color: var(--color-text);}
+    header .hamburger {font-size: 38px;}
+    /* 햄버거 메뉴 - 클릭 시 색상 변경 */
+    header .hamburger_on .fa-xmark {color: var(--color-high);}
+    /* 햄버거 메뉴 - 클릭 상태에서 메뉴창 나타나게*/
+    header .menu_on {opacity: 1;}
+
     /* section1 : 메인 슬라이드 */
     .mainContainer {background-color: transparent;}
     .mainContainer .mainSlide {
@@ -261,6 +281,7 @@
         margin: 10px 0;
         cursor: pointer;
         letter-spacing: 2px;
+        font-size: 14px;
     }
     .pagerName .pager li span {
         display: inline-block;

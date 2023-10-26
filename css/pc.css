@@ -1,5 +1,5 @@
 @media all and (min-width: 1024px) {
-    header nav .gnb-menu {padding: 0 32px}
+    /* header nav .gnb-menu {padding: 0 32px} */
     /* main */
     .mainContainer .mainSlide .main-txt-title .title-sub {
         font-size: 20px;

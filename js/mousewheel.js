@@ -8,6 +8,7 @@ $('.pager li').click(function() {
 
 let main = $('.mainContainer').offset().top;
 if(main == 0) {$('.pager li').eq(0).addClass('on');}
+
 $(window).scroll(function() {
     let windowTop = $(window).scrollTop();
     let menu = $('.menuContainer').offset().top;
