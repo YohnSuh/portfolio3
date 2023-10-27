@@ -29,6 +29,8 @@
         font-size: 32px;
         color: var(--color-text);
     }
+    header nav .gnb-menu h3 > div {width: 220px;}
+    header nav .gnb-menu h3 i {font-size: 24px;}
     header nav .gnb-menu span {font-size: 18px;}
     header nav .gnb-in li {
         font-size: 20px;
@@ -271,7 +273,7 @@
         display: block;
         position: fixed;
         top: 50%;
-        left: 50px;
+        left: 30px;
         transform: translateY(-50%);
         z-index: 9999;
     }
@@ -282,6 +284,7 @@
         cursor: pointer;
         letter-spacing: 2px;
         font-size: 14px;
+        transition: .2s;
     }
     .pagerName .pager li span {
         display: inline-block;
@@ -290,6 +293,7 @@
         border-radius: 100%;
         margin-right: 20px;
         border: 1px solid;
+        transition: .2s;
     }
     .pagerName .pager li.on:nth-child(1) {color: var(--color-text);}
     .pagerName .pager li.on:nth-child(1) span {background-color: var(--color-text);}

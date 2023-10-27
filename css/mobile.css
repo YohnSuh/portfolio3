@@ -40,12 +40,31 @@ header nav .gnb-menu {
 }
 header nav .gnb-menu h3 {
     display: flex;
+    align-items: center;
     font-size: 24px;
     color: var(--color-basic);
     cursor: pointer;
     font-weight: 900;
     letter-spacing: 5px;
+    overflow: hidden;
 }
+header nav .gnb-menu h3 i {
+    transition: .2s;
+    font-size: 18px;
+}
+header nav .gnb-menu h3.active i {transform: rotate(180deg);}
+header nav .gnb-menu h3 > div {
+    width: 170px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+/* 헤더 메뉴 클릭 시 움직임 */
+header nav .gnb-menu:nth-child(1) h3 > div {transition-delay: 0;}
+header nav .gnb-menu:nth-child(2) h3 > div {transition-delay: 0.1s;}
+header nav .gnb-menu:nth-child(3) h3 > div {transition-delay: 0.2s;}
+header nav .gnb-menu:nth-child(4) h3 > div {transition-delay: 0.3s;}
+header nav.menu_on .gnb-menu h3 > div {transform: translateY(0); opacity: 1;}
 header nav .gnb-menu span {
     font-size: 14px;
     margin-right: 25px;

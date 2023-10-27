@@ -19,7 +19,6 @@
     <!--swiper js-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!--mousewheel-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="js/mousewheel.js" defer></script>
     <script src="js/header.js" defer></script>
     <script src="js/slide.js" defer></script>
@@ -27,7 +26,9 @@
 <body>
     <!--https://www.thescottresort.com/
     헤더 새로 만들기 pc에서도 확 덮어버리게
-    메인 슬라이더 페이지, 화살표 표시하기-->
+    메인 슬라이더 페이지, 화살표 표시하기
+    https://codepen.io/GreenSock/pen/XWzRraJ
+    -->
     <header>
         <div class="headerWrap">
             <div class="logoWrap">
@@ -38,7 +39,10 @@
             <nav>
                 <div class="gnb">
                     <div class="gnb-menu">
-                        <h3><span>01</span>MENU</h3>
+                        <h3>
+                            <div><span>01</span>MENU</div>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </h3>
                         <ul class="gnb-in">
                             <li><a href="#">아이스크림</a></li>
                             <li><a href="#">음료</a></li>
@@ -48,7 +52,10 @@
                         </ul><!--gnb-in-->
                     </div><!--gnb-menu-->
                     <div class="gnb-menu">
-                        <h3><span>02</span>ABOUT</h3>
+                        <h3>
+                            <div><span>02</span>ABOUT</div>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </h3>
                         <ul class="gnb-in">
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">보도자료</a></li>
@@ -58,14 +65,20 @@
                         </ul><!--gnb-in-->
                     </div><!--gnb-menu-->
                     <div class="gnb-menu">
-                        <h3><span>03</span>EVENT</h3>
+                        <h3>
+                            <div><span>03</span>EVENT</div>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </h3>
                         <ul class="gnb-in">
                             <li><a href="#">진행중인 이벤트</a></li>
                             <li><a href="#">당첨자 발표</a></li>
                         </ul><!--gnb-in-->
                     </div><!--gnb-menu-->
                     <div class="gnb-menu">
-                        <h3><span>04</span>STORE</h3>
+                        <h3>
+                            <div><span>04</span>STORE</div>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </h3>
                         <ul class="gnb-in">
                             <li><a href="#">매장찾기</a></li>
                             <li><a href="#">고객센터</a></li>
